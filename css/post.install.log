@@ -1,0 +1,110 @@
+ 
+* = = = = = = = = =
+* Disk Driver: virtio_blk
+* = = = = = = = = =
+ 
+ 
+* = = = = = = = = =
+* NIC Driver: virtio_net
+* = = = = = = = = =
+ 
+Preparing to build initrd for Debian
+Working with /boot/vmlinuz-3.16.0-4-amd64
+Which is version: 3.16.0-4-amd64
+ 3. Not configuring swap on BigV VM
+Updating system
+Ign http://symbiosis.bytemark.co.uk ./ InRelease
+Ign http://repo.bytemark.co.uk ./ InRelease
+Ign http://repo.bytemark.co.uk ./ InRelease
+Hit http://symbiosis.bytemark.co.uk ./ Release.gpg
+Hit http://symbiosis.bytemark.co.uk ./ Release
+Hit http://repo.bytemark.co.uk ./ Release.gpg
+Hit http://repo.bytemark.co.uk ./ Release.gpg
+Ign http://httpredir.debian.org jessie InRelease
+Hit http://repo.bytemark.co.uk ./ Release
+Get:1 http://httpredir.debian.org jessie-backports InRelease [160 kB]
+Hit http://symbiosis.bytemark.co.uk ./ Packages
+Hit http://repo.bytemark.co.uk ./ Release
+Hit http://httpredir.debian.org jessie Release.gpg
+Hit http://repo.bytemark.co.uk ./ Sources
+Hit http://repo.bytemark.co.uk ./ Packages
+Hit http://httpredir.debian.org jessie Release
+Hit http://repo.bytemark.co.uk ./ Sources
+Hit http://repo.bytemark.co.uk ./ Packages
+Ign http://symbiosis.bytemark.co.uk ./ Translation-en
+Get:2 http://httpredir.debian.org jessie-backports/main amd64 Packages/DiffIndex [6715 B]
+Get:3 http://httpredir.debian.org jessie-backports/contrib amd64 Packages/DiffIndex [367 B]
+Ign http://repo.bytemark.co.uk ./ Translation-en
+Get:4 http://httpredir.debian.org jessie-backports/non-free amd64 Packages/DiffIndex [781 B]
+Ign http://repo.bytemark.co.uk ./ Translation-en
+Get:5 http://httpredir.debian.org jessie-backports/main Translation-en/DiffIndex [2299 B]
+Get:6 http://httpredir.debian.org jessie-backports/contrib Translation-en/DiffIndex [229 B]
+Get:7 http://httpredir.debian.org jessie-backports/non-free Translation-en/DiffIndex [505 B]
+Get:8 http://httpredir.debian.org jessie-backports/main amd64 2015-11-06-2047.19.pdiff [233 B]
+Get:9 http://httpredir.debian.org jessie-backports/main amd64 2015-11-07-2040.30.pdiff [774 B]
+Get:10 http://httpredir.debian.org jessie-backports/main amd64 2015-11-09-0843.15.pdiff [1216 B]
+Get:11 http://httpredir.debian.org jessie-backports/main amd64 2015-11-10-1441.40.pdiff [2306 B]
+Hit http://httpredir.debian.org jessie/main amd64 Packages
+Get:12 http://security.debian.org jessie/updates InRelease [63.1 kB]
+Hit http://httpredir.debian.org jessie/contrib Translation-en
+Get:13 http://httpredir.debian.org jessie-backports/main amd64 2015-11-08-2042.16.pdiff [929 B]
+Get:14 http://httpredir.debian.org jessie-backports/main amd64 2015-11-09-2042.06.pdiff [751 B]
+Hit http://httpredir.debian.org jessie/contrib amd64 Packages
+Hit http://httpredir.debian.org jessie/non-free amd64 Packages
+Get:15 http://httpredir.debian.org jessie-backports/main amd64 2015-11-09-2042.06.pdiff [751 B]
+Hit http://httpredir.debian.org jessie/main Translation-en
+Hit http://httpredir.debian.org jessie/non-free Translation-en
+Get:16 http://security.debian.org jessie/updates/main amd64 Packages [148 kB]
+Get:17 http://security.debian.org jessie/updates/contrib amd64 Packages [2512 B]
+Get:18 http://security.debian.org jessie/updates/non-free amd64 Packages [14 B]
+Get:19 http://security.debian.org jessie/updates/contrib Translation-en [1211 B]
+Get:20 http://security.debian.org jessie/updates/main Translation-en [82.5 kB]
+Get:21 http://security.debian.org jessie/updates/non-free Translation-en [14 B]
+Fetched 474 kB in 2s (234 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages will be upgraded:
+  krb5-locales libgssapi-krb5-2 libk5crypto3 libkrb5-3 libkrb5support0
+  linux-image-3.16.0-4-amd64 linux-libc-dev unzip
+8 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 38.2 MB of archives.
+After this operation, 45.1 kB of additional disk space will be used.
+Get:1 http://security.debian.org/ jessie/updates/main libgssapi-krb5-2 amd64 1.12.1+dfsg-19+deb8u1 [151 kB]
+Get:2 http://security.debian.org/ jessie/updates/main libkrb5-3 amd64 1.12.1+dfsg-19+deb8u1 [302 kB]
+Get:3 http://security.debian.org/ jessie/updates/main libkrb5support0 amd64 1.12.1+dfsg-19+deb8u1 [58.7 kB]
+Get:4 http://security.debian.org/ jessie/updates/main libk5crypto3 amd64 1.12.1+dfsg-19+deb8u1 [115 kB]
+Get:5 http://security.debian.org/ jessie/updates/main linux-image-3.16.0-4-amd64 amd64 3.16.7-ckt11-1+deb8u6 [33.8 MB]
+Get:6 http://security.debian.org/ jessie/updates/main krb5-locales all 1.12.1+dfsg-19+deb8u1 [2648 kB]
+Get:7 http://security.debian.org/ jessie/updates/main linux-libc-dev amd64 3.16.7-ckt11-1+deb8u6 [996 kB]
+Get:8 http://security.debian.org/ jessie/updates/main unzip amd64 6.0-16+deb8u2 [162 kB]
+Fetched 38.2 MB in 1s (31.8 MB/s)
+(Reading database ... 42208 files and directories currently installed.)
+Preparing to unpack .../libgssapi-krb5-2_1.12.1+dfsg-19+deb8u1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.12.1+dfsg-19+deb8u1) over (1.12.1+dfsg-19) ...
+Preparing to unpack .../libkrb5-3_1.12.1+dfsg-19+deb8u1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.12.1+dfsg-19+deb8u1) over (1.12.1+dfsg-19) ...
+Preparing to unpack .../libkrb5support0_1.12.1+dfsg-19+deb8u1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.12.1+dfsg-19+deb8u1) over (1.12.1+dfsg-19) ...
+Preparing to unpack .../libk5crypto3_1.12.1+dfsg-19+deb8u1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.12.1+dfsg-19+deb8u1) over (1.12.1+dfsg-19) ...
+Preparing to unpack .../linux-image-3.16.0-4-amd64_3.16.7-ckt11-1+deb8u6_amd64.deb ...
+Unpacking linux-image-3.16.0-4-amd64 (3.16.7-ckt11-1+deb8u6) over (3.16.7-ckt11-1+deb8u5) ...
+Preparing to unpack .../krb5-locales_1.12.1+dfsg-19+deb8u1_all.deb ...
+Unpacking krb5-locales (1.12.1+dfsg-19+deb8u1) over (1.12.1+dfsg-19) ...
+Preparing to unpack .../linux-libc-dev_3.16.7-ckt11-1+deb8u6_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (3.16.7-ckt11-1+deb8u6) over (3.16.7-ckt11-1+deb8u5) ...
+Preparing to unpack .../unzip_6.0-16+deb8u2_amd64.deb ...
+Unpacking unzip (6.0-16+deb8u2) over (6.0-16+deb8u1) ...
+Processing triggers for mime-support (3.58) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up libkrb5support0:amd64 (1.12.1+dfsg-19+deb8u1) ...
+Setting up libk5crypto3:amd64 (1.12.1+dfsg-19+deb8u1) ...
+Setting up libkrb5-3:amd64 (1.12.1+dfsg-19+deb8u1) ...
+Setting up libgssapi-krb5-2:amd64 (1.12.1+dfsg-19+deb8u1) ...
+Setting up linux-image-3.16.0-4-amd64 (3.16.7-ckt11-1+deb8u6) ...
+Setting up krb5-locales (1.12.1+dfsg-19+deb8u1) ...
+Setting up linux-libc-dev:amd64 (3.16.7-ckt11-1+deb8u6) ...
+Setting up unzip (6.0-16+deb8u2) ...
+Processing triggers for libc-bin (2.19-18+deb8u1) ...
